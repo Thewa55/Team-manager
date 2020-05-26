@@ -25,7 +25,24 @@ public class TeamCreator {
             System.out.println("2) Accountant");
             System.out.println("3) Intern");
             System.out.println("4) Done");
-            int choice = keyboard.nextInt();
+            if(keyboard.hasNextInt()) {
+                int choice = keyboard.nextInt();
+                if (choice == 1) {
+                    System.out.println("What's the name of the engineer?");
+                } else if (choice == 2) {
+                    System.out.println("What is the name of the accountant?");
+                } else if (choice == 3) {
+                    System.out.println("What is the name of the intern?");
+                } else if (choice == 4) {
+                    System.out.println("You've completed your team");
+                    break;
+                } else {
+                    System.out.println("Please input a valid input");
+                }
+            } else{
+                System.out.println("Please enter a number");
+                keyboard.next();
+            }
         }
     }
 }
