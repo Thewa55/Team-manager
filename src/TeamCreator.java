@@ -15,12 +15,15 @@ public class TeamCreator {
     }
 
     public static void main(String [] args){
-        ArrayList<Data> members = new ArrayList<Data>();
+        ArrayList<Manager> manager = new ArrayList<Manager>();
+        ArrayList<Accountant> accountants = new ArrayList<Accountant>();
+        ArrayList<Engineer> engineers = new ArrayList<Engineer>();
+        ArrayList<Intern> interns = new ArrayList<Intern>();
         Scanner keyboard =new Scanner(System.in);
         Manager manager1 = new Manager();
         manager1.addManager();
-//        members.add((Data) manager1);
-        System.out.println("The manager's name is "+ manager1.fullName+". Their email is: "+manager1.email+". Their office number is: "+manager1.officeNumber);
+        manager.add(manager1);
+        System.out.println(manager.size());
         while (true){
             System.out.println("Who else would you like to add?");
             System.out.println("1) Engineer");
@@ -32,12 +35,15 @@ public class TeamCreator {
                 if (choice == 1) {
                     Engineer engineer1 = new Engineer();
                     engineer1.addEngineer();
+                    engineers.add(engineer1);
                 } else if (choice == 2) {
                     Accountant accountant1 = new Accountant();
                     accountant1.addAccountant();
+                    accountants.add(accountant1);
                 } else if (choice == 3) {
                     Intern intern1 = new Intern();
                     intern1.addIntern();
+                    interns.add(intern1);
                 } else if (choice == 4) {
                     System.out.println("You've completed your team");
                     break;

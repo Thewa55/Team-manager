@@ -15,6 +15,6 @@ class Manager extends TeamCreator{
         email = keyboard.nextLine();
         System.out.println("What is the manager's office number?");
         officeNumber = keyboard.nextInt();
-        System.out.println("The manager's name is "+ fullName+". His email is: "+ email +". His office number is: "+ officeNumber );
+        System.out.println("The manager's name is " + fullName + ". Their email is: " + email + ". Their office number is: " + officeNumber);
     }
 }
