@@ -30,11 +30,14 @@ public class TeamCreator {
             if(keyboard.hasNextInt()) {
                 int choice = keyboard.nextInt();
                 if (choice == 1) {
-                    System.out.println("What's the name of the engineer?");
+                    Engineer engineer1 = new Engineer();
+                    engineer1.addEngineer();
                 } else if (choice == 2) {
-                    System.out.println("What is the name of the accountant?");
+                    Accountant accountant1 = new Accountant();
+                    accountant1.addAccountant();
                 } else if (choice == 3) {
-                    System.out.println("What is the name of the intern?");
+                    Intern intern1 = new Intern();
+                    intern1.addIntern();
                 } else if (choice == 4) {
                     System.out.println("You've completed your team");
                     break;
