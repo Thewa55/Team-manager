@@ -1,24 +1,26 @@
+import javax.xml.crypto.Data;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 public class TeamCreator {
-    private String fullName;
-    private String email;
-//
-//    Employee(String employeeName, String empEmail){
-//        this.fullName = employeeName;
-//        this.email = empEmail;
-//    }
+    protected String fullName;
+    protected String email;
+    protected String role;
+
+    TeamCreator(String employeeName, String empEmail, String empRole){
+        this.fullName = employeeName;
+        this.email = empEmail;
+        this.role = empRole;
+    }
 
     public static void main(String [] args){
-        ArrayList<String> names = new ArrayList<String>();
-        ArrayList<String> emails = new ArrayList<String>();
+        ArrayList<Data> members = new ArrayList<Data>();
         Scanner keyboard =new Scanner(System.in);
-        System.out.println("Welcome to your team managing program");
-        System.out.println("What's the name of the team manager?");
-        String managerName = keyboard.nextLine();
-        System.out.println("What is the manager's email?");
-        String managerEmail = keyboard.nextLine();
+        Manager manager1 = new Manager();
+        manager1.addManager();
+//        members.add((Data) manager1);
+        System.out.println("The manager's name is "+ manager1.fullName+". Their email is: "+manager1.email+". Their office number is: "+manager1.officeNumber);
         while (true){
             System.out.println("Who else would you like to add?");
             System.out.println("1) Engineer");
@@ -37,10 +39,10 @@ public class TeamCreator {
                     System.out.println("You've completed your team");
                     break;
                 } else {
-                    System.out.println("Please input a valid input");
+                    System.out.println("Please enter a number between 1-4");
                 }
             } else{
-                System.out.println("Please enter a number");
+                System.out.println("Please enter a number between 1-4.");
                 keyboard.next();
             }
         }
