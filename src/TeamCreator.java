@@ -50,9 +50,11 @@ public class TeamCreator {
                     for( Engineer engineer : engineers){
                         System.out.println("Name: " + engineer.fullName + " | E-mail: " + engineer.email + " | GitHub: " + engineer.github);
                     }
+                    System.out.println("Accountants");
                     for(Accountant accountant: accountants){
                         System.out.println("Name: " + accountant.fullName + " | E-mail: " + accountant.email + " | Something: " + accountant.emptyForNow);
                     }
+                    System.out.println("Interns");
                     for( Intern intern : interns){
                         System.out.println("Name: " + intern.fullName + " | E-mail: " + intern.email + " | School: " + intern.school);
                     }

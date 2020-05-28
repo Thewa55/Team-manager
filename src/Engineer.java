@@ -16,7 +16,7 @@ class Engineer extends TeamCreator{
         email = keyboard.nextLine();
         System.out.println("What is the engineer's Github user name?");
         github = keyboard.nextLine();
-        System.out.println("The engineer's name is "+ fullName+". Their email is: "+ email +". Their github is: "+ github);
+        System.out.println("The engineer's name is "+ fullName+". Their email is: "+ email +". Their Github is: "+ github);
     }
 
 }
