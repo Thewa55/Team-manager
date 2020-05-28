@@ -50,6 +50,12 @@ public class TeamCreator {
                     for( Engineer engineer : engineers){
                         System.out.println("Name: " + engineer.fullName + " | E-mail: " + engineer.email + " | GitHub: " + engineer.github);
                     }
+                    for(Accountant accountant: accountants){
+                        System.out.println("Name: " + accountant.fullName + " | E-mail: " + accountant.email + " | Something: " + accountant.emptyForNow);
+                    }
+                    for( Intern intern : interns){
+                        System.out.println("Name: " + intern.fullName + " | E-mail: " + intern.email + " | School: " + intern.school);
+                    }
                     break;
                 } else {
                     System.out.println("Please enter a number between 1-4");
