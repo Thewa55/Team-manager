@@ -43,7 +43,13 @@ public class TeamCreator {
                     intern1.addIntern();
                     interns.add(intern1);
                 } else if (choice == 4) {
-                    System.out.println("You've completed your team");
+                    System.out.println("You've completed your team!");
+                    System.out.println("Manager");
+                    System.out.println("Name: " + manager.get(0).fullName + " | E-mail: " + manager.get(0).email + " | Office Number" + manager.get(0).officeNumber);
+                    System.out.println("Engineers");
+                    for( Engineer engineer : engineers){
+                        System.out.println("Name: " + engineer.fullName + " | E-mail: " + engineer.email + " | GitHub: " + engineer.github);
+                    }
                     break;
                 } else {
                     System.out.println("Please enter a number between 1-4");
