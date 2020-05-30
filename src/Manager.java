@@ -11,8 +11,8 @@ class Manager extends TeamCreator{
     public void addManager(){
         Scanner keyboard =new Scanner(System.in);
         super.addEmployee(this.role);
-        System.out.println("What is the manager's office number?");
+        System.out.println("What is the Manager's office number?");
         officeNumber = keyboard.nextInt();
-        System.out.println("The manager's name is " + fullName + ". Their email is: " + email + ". Their office number is: " + officeNumber);
+        System.out.println("The Manager's name is " + fullName + ". Their email is: " + email + ". Their office number is: " + officeNumber);
     }
 }

@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dcfdd5b-03f1-424d-9030-9f324a725f04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Salary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Team-manager/Accountant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Team-manager/Accountant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Team-manager/Engineer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Team-manager/Engineer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Team-manager/Intern.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Team-manager/Intern.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Team-manager/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Team-manager/Manager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Team-manager/TeamCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Team-manager/TeamCreator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Accountant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Accountant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Engineer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engineer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Intern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Intern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TeamCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeamCreator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,22 +77,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1590688602872" />
-    <state width="1237" height="160" key="GridCell.Tab.0.bottom" timestamp="1590847498118">
+    <state width="1237" height="160" key="GridCell.Tab.0.bottom" timestamp="1590849777714">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="160" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590847498118" />
-    <state width="1237" height="160" key="GridCell.Tab.0.center" timestamp="1590847498118">
+    <state width="1237" height="160" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590849777714" />
+    <state width="1237" height="160" key="GridCell.Tab.0.center" timestamp="1590849777713">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="160" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590847498118" />
-    <state width="1237" height="160" key="GridCell.Tab.0.left" timestamp="1590847498118">
+    <state width="1237" height="160" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590849777713" />
+    <state width="1237" height="160" key="GridCell.Tab.0.left" timestamp="1590849777713">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="160" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590847498118" />
-    <state width="1237" height="160" key="GridCell.Tab.0.right" timestamp="1590847498118">
+    <state width="1237" height="160" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590849777713" />
+    <state width="1237" height="160" key="GridCell.Tab.0.right" timestamp="1590849777714">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="160" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590847498118" />
+    <state width="1237" height="160" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590849777714" />
     <state x="91" y="0" key="new project wizard" timestamp="1590809104711">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
