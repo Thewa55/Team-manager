@@ -14,7 +14,7 @@ class Engineer extends TeamCreator implements Salary{
         Scanner keyboard = new Scanner(System.in);
         System.out.println("What is the Engineer's salary?");
         salary = keyboard.nextFloat();
-        fixedSalary = String.format("%,.2f", salary);
+        fixedSalary = String.format("Their salary is: $%,.2f", salary);
     }
 
 
@@ -24,6 +24,6 @@ class Engineer extends TeamCreator implements Salary{
         System.out.println("What is the engineer's Github user name?");
         github = keyboard.nextLine();
         getSalary();
-        System.out.println("The Engineer's name is " + fullName + ". Their email is: " + email + ". Their Github is: " + github + ". Their salary is: $" + fixedSalary);
+        System.out.println("The Engineer's name is " + fullName + ". Their email is: " + email + ". Their Github is: " + github + ". " + fixedSalary);
     }
 }

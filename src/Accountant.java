@@ -14,7 +14,7 @@ class Accountant extends TeamCreator implements Salary{
         Scanner keyboard = new Scanner(System.in);
         System.out.println("What is the Accountant's salary?");
         salary = keyboard.nextFloat();
-        fixedSalary = String.format("%,.2f", salary);
+        fixedSalary = String.format("Their salary is: $%,.2f", salary);
     }
 
     public void addAccountant(){
@@ -23,6 +23,6 @@ class Accountant extends TeamCreator implements Salary{
         System.out.println("What degree does the accountant have? (ie: Economics, Accounting, MBA)");
         degree = keyboard.nextLine();
         getSalary();
-        System.out.println("The Accountant's name is "+ fullName+". Their email is: "+ email +". Their degree is "+ degree + ". Their salary is: $" + fixedSalary);
+        System.out.println("The Accountant's name is "+ fullName+". Their email is: "+ email +". Their degree is "+ degree + ". " + fixedSalary);
     }
 }
