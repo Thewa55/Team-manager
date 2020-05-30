@@ -1,10 +1,13 @@
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 public class TeamCreator{
     protected String role;
     protected String fullName;
     protected String email;
+    static int teamCount = 0;
+    private static Date today = new Date();
 
     TeamCreator(String employeeName, String empEmail, String empRole){
         this.fullName = employeeName;
@@ -13,6 +16,7 @@ public class TeamCreator{
     }
 
     void addEmployee(String empRole) {
+        teamCount++;
         Scanner keyboard =new Scanner(System.in);
         System.out.println("What's the name of the " + empRole +"?");
         fullName = keyboard.nextLine();
@@ -25,11 +29,11 @@ public class TeamCreator{
         ArrayList<Accountant> accountants = new ArrayList<Accountant>();
         ArrayList<Engineer> engineers = new ArrayList<Engineer>();
         ArrayList<Intern> interns = new ArrayList<Intern>();
+        String todayFormat = String.format("%tA, %<tB %<td", today);
         Scanner keyboard =new Scanner(System.in);
         Manager manager1 = new Manager();
         manager1.addManager();
         manager.add(manager1);
-        System.out.println(manager.size());
         while (true){
             System.out.println("Who else would you like to add?");
             System.out.println("1) Engineer");
@@ -66,6 +70,7 @@ public class TeamCreator{
                     for( Intern intern : interns){
                         System.out.println("Name: " + intern.fullName + " | E-mail: " + intern.email + " | School: " + intern.school);
                     }
+                    System.out.println("You have "+ teamCount +" members on the team. Created on " + todayFormat);
                     break;
                 } else {
                     System.out.println("Please enter a number between 1-4");

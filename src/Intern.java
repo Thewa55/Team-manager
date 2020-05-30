@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 class Intern extends TeamCreator{
-    String school;
+
+    protected String school;
 
     Intern(){
         super("","","Intern");

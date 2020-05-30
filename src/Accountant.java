@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Accountant extends TeamCreator{
 
-    public String degree;
+    protected String degree;
 
     Accountant(){
         super("","","Accountant");
@@ -11,8 +11,8 @@ class Accountant extends TeamCreator{
     public void addAccountant(){
         Scanner keyboard =new Scanner(System.in);
         super.addEmployee(this.role);
-        System.out.println("What school does the intern attend?");
+        System.out.println("What degree does the accountant have? (ie: Economics, Accounting, MBA)");
         degree = keyboard.nextLine();
-        System.out.println("The accountant's name is "+ fullName+". Their email is: "+ email +". Finance degree (ie: Economics, Accounting, MBA): "+ degree );
+        System.out.println("The accountant's name is "+ fullName+". Their email is: "+ email +"| Degree: "+ degree );
     }
 }

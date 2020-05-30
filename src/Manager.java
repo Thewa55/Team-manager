@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 class Manager extends TeamCreator{
-    public int officeNumber;
+
+    protected int officeNumber;
 
     Manager(){
         super("", "", "Manager");

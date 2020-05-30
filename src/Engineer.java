@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class Engineer extends TeamCreator{
 
-    public String github;
+    protected String github;
 
     Engineer(){
         super("","","Engineer");
@@ -15,5 +15,4 @@ class Engineer extends TeamCreator{
         github = keyboard.nextLine();
         System.out.println("The engineer's name is "+ fullName+". Their email is: "+ email +". Their Github is: "+ github);
     }
-
 }
