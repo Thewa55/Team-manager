@@ -9,10 +9,7 @@ class Intern extends TeamCreator{
 
     public void addIntern(){
         Scanner keyboard =new Scanner(System.in);
-        System.out.println("What's the name of the intern?");
-        fullName = keyboard.nextLine();
-        System.out.println("What is the intern's email?");
-        email = keyboard.nextLine();
+        super.addEmployee(this.role);
         System.out.println("What school does the intern attend?");
         school = keyboard.nextLine();
         System.out.println("The intern's name is "+ fullName+". Their email is: "+ email +". Their school is: "+ school );

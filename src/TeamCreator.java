@@ -1,15 +1,23 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class TeamCreator {
+public class TeamCreator{
+    protected String role;
     protected String fullName;
     protected String email;
-    protected String role;
 
     TeamCreator(String employeeName, String empEmail, String empRole){
         this.fullName = employeeName;
         this.email = empEmail;
         this.role = empRole;
+    }
+
+    void addEmployee(String empRole) {
+        Scanner keyboard =new Scanner(System.in);
+        System.out.println("What's the name of the " + empRole +"?");
+        fullName = keyboard.nextLine();
+        System.out.println("What is the " + empRole +  "'s email?");
+        email = keyboard.nextLine();
     }
 
     public static void main(String [] args){
@@ -52,7 +60,7 @@ public class TeamCreator {
                     }
                     System.out.println("Accountants");
                     for(Accountant accountant: accountants){
-                        System.out.println("Name: " + accountant.fullName + " | E-mail: " + accountant.email + " | Something: " + accountant.emptyForNow);
+                        System.out.println("Name: " + accountant.fullName + " | E-mail: " + accountant.email + " | Degree: " + accountant.degree);
                     }
                     System.out.println("Interns");
                     for( Intern intern : interns){
@@ -68,4 +76,5 @@ public class TeamCreator {
             }
         }
     }
+
 }
