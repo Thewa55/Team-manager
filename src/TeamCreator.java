@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -29,6 +30,16 @@ public class TeamCreator{
         ArrayList<Accountant> accountants = new ArrayList<Accountant>();
         ArrayList<Engineer> engineers = new ArrayList<Engineer>();
         ArrayList<Intern> interns = new ArrayList<Intern>();
+        System.out.println(" /$$$$$$$$                                      /$$$$$$$            /$$ /$$       /$$                          \n" +
+                "|__  $$__/                                     | $$__  $$          |__/| $$      | $$                          \n" +
+                "   | $$  /$$$$$$   /$$$$$$  /$$$$$$/$$$$       | $$  \\ $$ /$$   /$$ /$$| $$  /$$$$$$$  /$$$$$$   /$$$$$$       \n" +
+                "   | $$ /$$__  $$ |____  $$| $$_  $$_  $$      | $$$$$$$ | $$  | $$| $$| $$ /$$__  $$ /$$__  $$ /$$__  $$      \n" +
+                "   | $$| $$$$$$$$  /$$$$$$$| $$ \\ $$ \\ $$      | $$__  $$| $$  | $$| $$| $$| $$  | $$| $$$$$$$$| $$  \\__/      \n" +
+                "   | $$| $$_____/ /$$__  $$| $$ | $$ | $$      | $$  \\ $$| $$  | $$| $$| $$| $$  | $$| $$_____/| $$            \n" +
+                "   | $$|  $$$$$$$|  $$$$$$$| $$ | $$ | $$      | $$$$$$$/|  $$$$$$/| $$| $$|  $$$$$$$|  $$$$$$$| $$            \n" +
+                "   |__/ \\_______/ \\_______/|__/ |__/ |__/      |_______/  \\______/ |__/|__/ \\_______/ \\_______/|__/            \n" +
+                "                                                                                                               \n" +
+                "                                                                                                              ");
         String todayFormat = String.format("%tA, %<tB %<td", today);
         Scanner keyboard =new Scanner(System.in);
         Manager manager1 = new Manager();
@@ -60,11 +71,11 @@ public class TeamCreator{
                     System.out.println("Name: " + manager.get(0).fullName + " | E-mail: " + manager.get(0).email + " | Office Number" + manager.get(0).officeNumber);
                     System.out.println("Engineers");
                     for( Engineer engineer : engineers){
-                        System.out.println("Name: " + engineer.fullName + " | E-mail: " + engineer.email + " | GitHub: " + engineer.github);
+                        System.out.println("Name: " + engineer.fullName + " | E-mail: " + engineer.email + " | GitHub: " + engineer.github + "| Salary: "+engineer.salary);
                     }
                     System.out.println("Accountants");
                     for(Accountant accountant: accountants){
-                        System.out.println("Name: " + accountant.fullName + " | E-mail: " + accountant.email + " | Degree: " + accountant.degree);
+                        System.out.println("Name: " + accountant.fullName + " | E-mail: " + accountant.email + " | Degree: " + accountant.degree + "| Salary: "+ accountant.salary);
                     }
                     System.out.println("Interns");
                     for( Intern intern : interns){
