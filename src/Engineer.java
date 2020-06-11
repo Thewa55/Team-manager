@@ -4,7 +4,7 @@ class Engineer extends TeamCreator implements Salary{
 
     protected String github;
     protected float salary;
-    private String fixedSalary;
+    protected String fixedSalary;
 
     Engineer(){
         super("","","Engineer");

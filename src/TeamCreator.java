@@ -71,11 +71,11 @@ public class TeamCreator{
                     System.out.println("Name: " + manager.get(0).fullName + " | E-mail: " + manager.get(0).email + " | Office Number" + manager.get(0).officeNumber);
                     System.out.println("Engineers");
                     for( Engineer engineer : engineers){
-                        System.out.println("Name: " + engineer.fullName + " | E-mail: " + engineer.email + " | GitHub: " + engineer.github + "| Salary: "+engineer.salary);
+                        System.out.println("Name: " + engineer.fullName + " | E-mail: " + engineer.email + " | GitHub: " + engineer.github + "| Salary: $"+engineer.fixedSalary);
                     }
                     System.out.println("Accountants");
                     for(Accountant accountant: accountants){
-                        System.out.println("Name: " + accountant.fullName + " | E-mail: " + accountant.email + " | Degree: " + accountant.degree + "| Salary: "+ accountant.salary);
+                        System.out.println("Name: " + accountant.fullName + " | E-mail: " + accountant.email + " | Degree: " + accountant.degree + "| Salary: "+ accountant.fixedSalary);
                     }
                     System.out.println("Interns");
                     for( Intern intern : interns){
